@@ -26,7 +26,7 @@ const Form = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <Form >
       <div className="mb-3">
         <label htmlFor="titleInput" className="form-label">Title</label>
         <input
@@ -34,7 +34,7 @@ const Form = () => {
           className="form-control"
           id="titleInput"
           placeholder="Enter title"
-          ref={titleRef}
+          name="title"
         />
       </div>
 
@@ -45,15 +45,25 @@ const Form = () => {
           id="textInput"
           rows="3"
           placeholder="Enter text"
-          ref={textRef}
+          name="body"
         ></textarea>
       </div>
 
       
 
       <button type="submit" className="btn btn-primary">Submit</button>
-    </form>
+    </Form>
   );
 };
+
+export async function createPostAction(data) {
+  const formData = await data.request.formData();
+  const postData = Object.fromEntries(formData);
+  console.log(postData);
+
+  add(postData);
+
+  return redirect("/");
+}
 
 export default Form;

@@ -4,7 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Form from './components/Form.jsx';
+import Form, { createPostAction } from './components/Form.jsx';
 import { postLoader } from './components/postList.jsx';
 
 
@@ -18,7 +18,7 @@ const router=createBrowserRouter(
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router}/>
-\  </StrictMode>,
+  </StrictMode>,
 )
 
 
