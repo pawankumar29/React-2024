@@ -6,7 +6,8 @@ import Sidebar from './components/sidebar'
 import Form from './components/Form'
 import PostList from './components/postList'
 import DispatchEvent from '../../../TODO/src/store/testContext'
-import { useLoaderData } from 'react-router-dom'
+import { Outlet, useLoaderData } from 'react-router-dom'
+
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
     <div className='body'>
     <Header/>
     {/* {option==="form"? <Form/>:<PostList/>} */}
+    <Outlet/>
     <PostList postArray={postArray} />
     <Footer/>
     </div>
