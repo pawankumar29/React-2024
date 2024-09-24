@@ -6,10 +6,12 @@ import Sidebar from './components/sidebar'
 import Form from './components/Form'
 import PostList from './components/postList'
 import DispatchEvent from '../../../TODO/src/store/testContext'
+import { useLoaderData } from 'react-router-dom'
 
 function App() {
 
   const [option,optionSelected]=useState("home");
+     const postArray=useLoaderData();
  
 
   return (
@@ -18,7 +20,8 @@ function App() {
     <Sidebar option={option} optionSelected={optionSelected}/>
     <div className='body'>
     <Header/>
-    {option==="form"? <Form/>:<PostList/>}
+    {/* {option==="form"? <Form/>:<PostList/>} */}
+    <PostList postArray={postArray} />
     <Footer/>
     </div>
 

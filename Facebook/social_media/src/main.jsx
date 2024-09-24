@@ -4,9 +4,14 @@ import App from './App.jsx'
 import './index.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Form from './components/Form.jsx';
+import { postLoader } from './components/postList.jsx';
+
 
 const router=createBrowserRouter(
- [ {path:"/",element:<App/> } ]
+ [ {path:"/",element:<App/> ,loader:postLoader} ,
+  {path:"/create",element:<Form/>}
+ ]
 )
 
 

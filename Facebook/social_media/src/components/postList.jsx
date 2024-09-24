@@ -1,9 +1,8 @@
 import { useContext } from "react";
 import { facebookContext } from "../store/facebbok_store";
 
-const PostList=()=>{
+const PostList=({postArray})=>{
 
-    const {postArray}=useContext(facebookContext)
     return(
         <>
         
@@ -21,5 +20,13 @@ const PostList=()=>{
         </>
     )
 }
+
+export const postLoader = () => {
+  return fetch("https://dummyjson.com/posts")
+    .then((res) => res.json())
+    .then((data) => {
+      return data.posts;
+    });
+};
 
 export default PostList;
