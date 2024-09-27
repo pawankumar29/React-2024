@@ -28,13 +28,13 @@ const Form = () => {
 
   return (
     <RouterForm method="POST">
-      <div className="mb-3">
-        <label htmlFor="titleInput" className="form-label">
+      <div classNameName="mb-3">
+        <label htmlFor="titleInput" classNameName="form-label">
           Title
         </label>
         <input
           type="text"
-          className="form-control"
+          classNameName="form-control"
           id="titleInput"
           placeholder="Enter title"
           name="title"
@@ -42,12 +42,12 @@ const Form = () => {
         />
       </div>
 
-      <div className="mb-3">
-        <label htmlFor="textInput" className="form-label">
+      <div classNameName="mb-3">
+        <label htmlFor="textInput" classNameName="form-label">
           Text
         </label>
         <textarea
-          className="form-control"
+          classNameName="form-control"
           id="textInput"
           rows="3"
           placeholder="Enter text"
@@ -56,7 +56,7 @@ const Form = () => {
         ></textarea>
       </div>
 
-      <button type="submit" className="btn btn-primary">
+      <button type="submit" classNameName="btn btn-primary">
         Submit
       </button>
     </RouterForm>

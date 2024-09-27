@@ -31,15 +31,15 @@ function InputField(props){
 
     return(
         <>
-        <div className="row">
-            <div className="col-4">
+        <div classNameName="row">
+            <div classNameName="col-4">
                 <input type="text" placeholder="Enter Task" ref={setDataRef}    onChange={addTask}/>
             </div>
-            <div className="col-4">
+            <div classNameName="col-4">
                 <input type="date" onChange={addDate}/>
             </div>
-            <div className="col-4">
-            <button type="button" className="btn btn-success" onClick={sendToParent}>Add</button>
+            <div classNameName="col-4">
+            <button type="button" classNameName="btn btn-success" onClick={sendToParent}>Add</button>
 
             </div>
         </div>

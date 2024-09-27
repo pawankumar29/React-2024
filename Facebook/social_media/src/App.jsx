@@ -17,9 +17,9 @@ function App() {
 
   return (
     <DispatchEvent>
-    <div className="container">
+    <div classNameName="container">
     <Sidebar option={option} optionSelected={optionSelected}/>
-    <div className='body'>
+    <div classNameName='body'>
     <Header/>
     {/* {option==="form"? <Form/>:<PostList/>} */}
     <Outlet/>

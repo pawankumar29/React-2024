@@ -9,11 +9,11 @@ const PostList=({postArray})=>{
         {
           postArray.map((m)=>{
             console.log("m::",m);
-           return <div className="card" style={{width: "18rem"}}>
-            <div className="card-body">
-              <h5 className="card-title">{m.title}</h5>
+           return <div classNameName="card" style={{width: "18rem"}}>
+            <div classNameName="card-body">
+              <h5 classNameName="card-title">{m.title}</h5>
               <br/>
-              <p className="card-text">{m.body}</p>
+              <p classNameName="card-text">{m.body}</p>
             </div>
           </div>
           })

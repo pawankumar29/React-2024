@@ -13,16 +13,16 @@ function Loop(props){
         <>
         {
             todoItems.map((m)=>{
-            return     <div className="row" key={m.task}>
-                    <div className="col-4">
+            return     <div classNameName="row" key={m.task}>
+                    <div classNameName="col-4">
                         {m.task}
                     </div>
-                    <div className="col-4">
+                    <div classNameName="col-4">
                         {m.date}
                     </div>
 
-                    <div className="col-4">
-                    <button type="button" className="btn btn-danger" onClick={ ()=>Delete(m.task)}>Delete</button>
+                    <div classNameName="col-4">
+                    <button type="button" classNameName="btn btn-danger" onClick={ ()=>Delete(m.task)}>Delete</button>
 
                     </div>
                  </div>
