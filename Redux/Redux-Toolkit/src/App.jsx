@@ -29,7 +29,7 @@ function App() {
  }
 
  const handleAdd=()=>{
-  dispatch(counterAction.add(inputRef.current.value))
+  dispatch(counterAction.add({num:inputRef.current.value}))
 }
 
 const handleSub=()=>{
