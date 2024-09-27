@@ -12,6 +12,8 @@ function App() {
   const inputRef=useRef();
 
   
+
+  
   const counter=useSelector(state=>state.counter);
   console.log("state::",counter);
 

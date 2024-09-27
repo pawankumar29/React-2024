@@ -4,8 +4,8 @@ import './App.css'
 
 function App() {
   
- const counter=useSelector(state=>state)
- console.log("state::",state);
+ const counter=useSelector(state=>state.counter)
+ console.log("state::",counter);
   const dispatch=useDispatch();
   const handleAdd=()=>{
        dispatch({type:"ADD"});
@@ -16,7 +16,7 @@ function App() {
 }
   return (
     <>
-    <div>Counter:{0}</div>
+    <div>Counter:{counter}</div>
     <div>
       <button onClick={handleAdd}>Inc</button>
       <br/>
