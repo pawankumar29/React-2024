@@ -38,7 +38,7 @@
     "COIN_FAMILY_TRON": 6,
     "LAST_BLOCK_NUMBER_BTC": "btc_block_number",
     "UPDATE_BTC_BLOCK_STATUS": "update_btc_block_status",
-    "FCM_PUSH": "AAAA1KgNbrg:APA91bEMZFYCReGekGFgBsYZOIE1tH_vbfnyyJxWu5JwSBrCjogSxGOrOlqqP_obF1ZHiBmTkeoaRFuipMK2T4QS2Cv2T5S5jMNOS8wKyw32jJhdThw547uCByNhR6HriV3ig1CaQb_5",
+    "FCM_PUSH": "",
     "BSC_BLOCKS": "bsc_blocks",
     "ETH_BLOCKS": "eth_blocks",
     "TRON_BLOCKS": "tron_blocks",
@@ -94,6 +94,9 @@
     "TRON":6,
     "BTC":3 
   },
+
+
+  
  "COIN_LIMIT_COUNT_FIELD":{
     "current_price_coin_counter":"current_price_coin_counter",
      "current_price_currency_counter":"current_price_currency_counter",
